@@ -12,64 +12,64 @@ Este proyecto es una aplicación CRUD (Crear, Leer, Actualizar y Eliminar) desar
 - Rswag para la documentación de la API
 
 ## Instalación
+
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/usuario/tareas_crud.git
    cd tareas_crud
-Instala las dependencias:
 
-bash
-Copiar
-Editar
-bundle install
-Configura la base de datos en config/database.yml y ejecuta las migraciones:
 
-bash
-Copiar
-Editar
-rails db:create
-rails db:migrate
-Instala Tailwind CSS (opcional):
+2. Instala las dependencias:
+    ```bash
+    bundle install
 
-bash
-Copiar
-Editar
-rails tailwindcss:install
-Inicia el servidor:
+3. Configura la base de datos en config/database.yml y ejecuta las migraciones:
+    ```bash
+    rails db:create
+    rails db:migrate
 
-bash
-Copiar
-Editar
-rails server
+4. Instala Tailwind CSS (opcional):
+
+    ```bash
+    rails tailwindcss:install
+
+5. Inicia el servidor:
+
+    ```bash
+    rails server
+
+
 Uso
 Accede a la aplicación en localhost:3000/tareas
 
 Operaciones CRUD
-Crear una nueva tarea
+Crear una nueva tarea: Formulario para añadir una tarea con título, descripción y estado.
 
-Ver una tarea existente
+Ver una tarea existente: Mostrar los detalles de una tarea específica.
 
-Editar una tarea
+Editar una tarea: Modificar los datos de una tarea.
 
-Eliminar una tarea
+Eliminar una tarea: Eliminar una tarea del sistema.
+
 
 Pruebas
 Las pruebas se realizan utilizando RSpec y están ubicadas en la carpeta spec/.
 
-Ejecutar Pruebas Unitarias
-bash
-Copiar
-Editar
-bundle exec rspec
+6. Ejecutar Pruebas Unitarias
+
+    ```bash
+    bundle exec rspec
+
 Documentación de la API con Rswag
 Para acceder a la documentación de la API, inicia el servidor y visita:
 localhost:3000/api-docs
 
-Generar la documentación de la API
-bash
-Copiar
-Editar
-rails rswag:specs:swaggerize
+7. Generar la documentación de la API
+
+    ```bash
+    rails rswag:specs:swaggerize
+
+
 Estructura del Proyecto
 app/models/tarea.rb - Modelo de la tarea
 
@@ -82,5 +82,5 @@ spec/ - Pruebas unitarias y de integración
 Contribuciones
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para cualquier mejora o corrección.
 
-Licencia
-Este proyecto está bajo la licencia MIT.
+
+
